@@ -4,12 +4,18 @@
 
 .poll-result-content {
   background-color: $white;
-  padding: 2em;
   margin-bottom: $base-spacing;
+
+  @include media($small-viewport) {
+    padding: 6px 14px;
+  }
+
+  @include media($medium-viewport-up) {
+    padding: 2em;
+  }
 }
 
 .poll-result-question {
-  @include word-wrap;
   font-size: 1.5em;
   line-height: 1.5em;
 }

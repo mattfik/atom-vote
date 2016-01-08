@@ -1,7 +1,13 @@
 .header-wrapper {
-  padding-top: $base-spacing * 2;
   padding-bottom: $base-spacing;
-  margin-bottom: $base-spacing;
+
+  @include media($small-viewport) {
+    padding-top: $base-spacing;
+  }
+  @include media($medium-viewport-up) {
+    padding-top: $base-spacing * 2;
+    margin-bottom: $base-spacing;
+  }
 }
 
 .header-content {

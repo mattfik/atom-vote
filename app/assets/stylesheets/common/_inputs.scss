@@ -10,9 +10,11 @@
 
 #{$all-text-inputs},
 textarea {
+  @include appearance(none);
   @include transition(all .25s ease-out);
   background-color: $white;
   border: 1px solid transparent;
+  border-radius: 0;
   color: $base-font-color;
   font-size: inherit;
   font-family: $open-sans;

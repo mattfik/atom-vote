@@ -3,8 +3,14 @@
 }
 
 .poll-show-question {
-  @include word-wrap;
-  font-size: 1.5em;
   letter-spacing: .5px;
+
+  @include media($small-viewport) {
+    font-size: 1.125em;
+  }
+
+  @include media($medium-viewport-up) {
+    font-size: 1.5em;
+  }
 }
 
